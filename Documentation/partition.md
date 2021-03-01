@@ -51,7 +51,8 @@ The command needs to be run from the host console by either connecting a keyboar
 
 Log in as `root` to get to the Home Assistant CLI and then enter `login` to continue to the host.
 
-Confirm your USB SSD/HD is connected and recognized using `fdisk -l`.
+Confirm your USB SSD/HD is connected and recognized using `fdisk -l`.![fdiskL](https://user-images.githubusercontent.com/36886571/109482112-9a03ac80-7a4b-11eb-8211-086583f5773d.jpg)
+``` clarify that this is fdisk -(the letter L not number 1)```
 
 With the drive connected, use the following command (replacing sdx with your drive, without a partition number):
 
@@ -63,3 +64,6 @@ Enter "yes" to confirm the operation. This will prepare the disk, however, the
 actual move will be running on next reboot. Once complete, the external drive
 will contain the data and will need to be plugged in to successfully boot Home
 Assistant OS.
+Add a command from the SSH window ha host reboot.
+Please be patient, during a headless reboot your information is being copied in the background and it 10 to 15 minutes (or longer) depending on the amount of information.
+Give some information about the time needed for the system to come back.  With a headless system the user see no information
